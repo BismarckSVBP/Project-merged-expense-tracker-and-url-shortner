@@ -9,7 +9,7 @@ function sendOTP() {
 
   let emailbody = `<h2>Your OTP is </h2>${otp_val}`;
   Email.send({
-    SecureToken: "408c93b4-293f-4275-8740-b3e6897c867c",
+    SecureToken: "67cf52cf-ac37-4083-8c91-5302158cd75d",
     To: email.value,
     From: "bismarcksvbp@gmail.com",
     Subject: "Email OTP Using JS",
@@ -21,7 +21,7 @@ function sendOTP() {
       otpverify.style.display = "flex";
       const otp_inp = document.getElementById("otp_inp");
       const otp_btn = document.getElementById("otp-btn");
-
+     
       otp_btn.addEventListener("click", () => {
         if (otp_inp.value == otp_val) {
           alert("Email address verified...");
