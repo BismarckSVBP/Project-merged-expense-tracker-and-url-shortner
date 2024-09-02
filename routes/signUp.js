@@ -3,7 +3,7 @@ const express = require("express");
 const {check} = require("../public/otp");
 const router = express.Router();
 
-router.get("/signup",check, async (req, res) => {
+router.get("/signup", async (req, res) => {
   
   return res.render("signUp");
 });
